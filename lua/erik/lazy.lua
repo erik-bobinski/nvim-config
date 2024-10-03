@@ -20,4 +20,3 @@ require("lazy").setup({ { import = "erik.plugins"}, {import = "erik.plugins.lsp"
         notify = false,
     },
 })
-

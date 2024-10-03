@@ -46,6 +46,7 @@ return {
         "java",
         "rust",
         "elixir",
+        "go",
       },
       incremental_selection = {
         enable = true,

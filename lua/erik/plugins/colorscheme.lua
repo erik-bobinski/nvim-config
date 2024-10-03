@@ -1,6 +1,6 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "rose-pine/nvim",
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       local bg = "#1C1F20"
@@ -13,8 +13,8 @@ return {
       local fg_gutter = "#627E97"
       local border = "#547998"
 
-      require("tokyonight").setup({
-        style = "night",
+      require("rose-pine").setup({
+        variant = "main",
         on_colors = function(colors)
           colors.bg = bg
           colors.bg_dark = bg
@@ -34,7 +34,7 @@ return {
         end,
       })
       -- load the colorscheme here
-      vim.cmd([[colorscheme tokyonight]])
+      vim.cmd([[colorscheme rose-pine]])
     end,
   },
 }
