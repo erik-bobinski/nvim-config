@@ -106,3 +106,10 @@ vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NvimTreeVertSplit', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'NvimTreeEndOfBuffer', { bg = 'none' })
 ]]--
+
+-- Allows Esc key to exit terminal mode
+vim.api.nvim_set_keymap('t','<Esc>', '<C-\\><C-n>', { noremap = true, silent = true } )
+
+-- New terminal command to quickly open powershell(uppercase required)
+vim.api.nvim_create_user_command('Term', 'terminal powershell', {})
+
